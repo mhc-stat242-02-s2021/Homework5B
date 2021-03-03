@@ -1,0 +1,70 @@
+---
+title: "STAT 242 HW 1" ## Change the title weekly according to the HW assignment number. 
+author: "Your Name Here" ## Change to your name. Use quotes! Also, put your collaboraters in parentheses. 
+date: "`r format(Sys.Date(), '%m/%d/%Y')`" ## No need to change the date! This R command prints it out automatically.  
+output: html_document ## Keep this as an html document, for now. 
+---
+
+```{r include = FALSE}   
+knitr::opts_chunk$set(   # This is for later! Don't worry about it now. 
+  echo = TRUE,           # Don't show code.
+  warning = FALSE,       # Don't show warnings.
+  message = FALSE,       # Don't show messages (less serious warnings).
+  cache = FALSE,         # Set to TRUE to save results from last compilation.
+  fig.align = "center"   # Center figures.
+)
+library(tidyverse)       # Load libraries you always use here.
+library(tidymodels)
+library(ggplot2)
+```
+
+# Problem One 
+
+This is the template for R Markdown documents! You can type directly into the editor (the box in the upper left corner in R Studio). Once you have changed your name and the title, click on the "Knit" button with a picture of a ball of yarn next to it. It should render a Word document, complete with your name and new title.
+
+# Problem Two
+
+To make a new section, use the "#" sign before the heading---something like "# Problem Two". If you want sub-headings, add more pound signs. In my editor, the words turn blue when they are recognized as a heading. 
+
+## Problem Two, Part A
+
+To make this heading, I wrote "## Problem Two, Part A" in the editor. 
+
+### Problem Two, Part A, Number (i)
+
+To make this heading, I wrote "### Problem Two, Part A, Number (i)" in the editor. 
+
+# Problem Three
+
+You might want to include numbered lists or bullets. For numbered lists, you can write like normal:
+
+1. This is number one. 
+2. This is number two. 
+
+For bullets, you can use an asterisk, or "*". 
+
+* This is bullet one. 
+* This is bullet two. 
+
+Unfortunately, R Markdown cannot do alphabetical lists. Just use the section headings to indicate which letter you are on in the assignment (like the subheading Number 2, Part A).
+
+Note: if your bullets look funny, try separating your plain text and your bullets. It should not look like this:
+
+Here is some plain text. Now I want to add bullets.
+*My text is all squished together, help!
+*Why is this happening to me?
+*I must have forgotten a return/enter.
+
+# Problem Four
+
+If you want to include some R code, click on the insert button at the top of the editor. Choose the R option. A gray box with "\` \` \` \{r\}" at the top and "\` \` \`" at the bottom will appear.
+
+```{r}
+## Look! A gray box for my R code.
+```
+
+Instead of clicking, you can also type "\` \` \` \{r\}" and  "\` \` \`". Either way, write your code between the punctuation, inside the gray box. 
+
+# Problem Five
+
+Save your document as "Last Name HW 2" with file extension ".Rmd". Hit the "Knit" button one last time. Now, you are ready to submit your assignment! Upload the "Last Name HW 2.html" file that appeared after knitting the document to Gradescope. That's it!
